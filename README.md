@@ -38,10 +38,12 @@ All notebooks except `backward-propagation.ipynb` (see the Pyodide note below) e
 
 **1. Create and activate a virtual environment.**
 
+Use a **Python 3.9–3.12** interpreter (3.11 or 3.12 recommended) — this ceiling comes from the `tensorflow-cpu==2.18.0` and `torch==2.2.0+cpu` wheels pinned below only publishing for cp39–cp312, not from anything in the notebook code (`forward-propagation.ipynb` itself, needing only `numpy`, runs fine on newer interpreters). If your default `python3` resolves to 3.13+, point `venv` at a specific interpreter instead:
+
 Using `venv`:
 
 ```bash
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate    # Windows: .venv\Scripts\activate
 ```
 

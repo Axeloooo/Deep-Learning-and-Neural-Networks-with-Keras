@@ -10,7 +10,7 @@ This is an educational collection of standalone Jupyter notebooks covering deep 
 
 - No `requirements.txt` / `environment.yml` exists in the repo. Notebooks assume `keras`, `tensorflow`, `numpy`, `matplotlib`, `pandas`, and (for `classification-and-captioning.ipynb` only) `torch`, `transformers`, and `Pillow` are available in the active Python environment.
 - There is no lint, test, or build command — validate changes by executing the notebook's cells (e.g. via `jupyter nbconvert --to notebook --execute <file>` or running it in Jupyter/JupyterLab) rather than by writing unit tests.
-- `forward-propagation.ipynb` and `backward-propagation.ipynb` use a `Python (Pyodide)` kernel (browser/JupyterLite-style, no external installs); the rest use a standard `Python 3 (ipykernel)` kernel with the packages above installed.
+- `backward-propagation.ipynb` uses a `Python (Pyodide)` kernel (browser/JupyterLite-style, no external installs); the rest, including `forward-propagation.ipynb`, use a standard `Python 3 (ipykernel)` kernel with the packages above installed.
 - Notebooks import from `keras.*` directly in some places and `tensorflow.keras.*` in others (even within the same notebook, e.g. `transformers-with-Keras.ipynb` and `classification-and-captioning.ipynb`) — preserve whichever import style the surrounding cells already use rather than normalizing it.
 
 ## Notebook map
