@@ -1,0 +1,27 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Node (release workflow generates these at runtime; never commit)
+node_modules/
+package.json
+package-lock.json
+
+# OS
+.DS_Store
+
+# Tooling
+.superpowers/
+
+# Notebook run artifacts
+*.keras
+*.h5
+*.tar
+aircraft_damage_dataset_v1/
+concrete_data.csv
